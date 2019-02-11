@@ -1,0 +1,35 @@
+<div>
+    <form [formGroup]="seekerForm" (ngSubmit) = "onClickSubmit(formdata.value)" >
+       <input type="text" class="fortextbox" name="name" placeholder="Enter your name" 
+          formControlName="name">
+       <br/>
+       
+          <select>
+            <option value="wedding" selected>Wedding</option>
+            <option value="babyShower">Baby Shower</option>
+            <option value="birthday">Birthday</option>
+            <option value="sendOff">Send-off</option>
+            <option value="photoShoot">Photoshoot</option>
+            <option value="camping">Camping/Safari</option>
+            <option value="bachelors">Bachelor's/Bachelorette</option>
+            <option value="graduation">Graduation</option>
+            <option value="conference">Conference</option>
+            <option value="endYearParty">End-Year Party</option>
+            <option value="reunion">Reunion</option>
+            <option value="funeral">Funeral</option>
+          </select>
+    
+       <br/>
+       <input type="eventName" class="fortextbox" name="eventName" 
+          placeholder="EventName" formControlName="eventName">
+       <br/>
+       <input type="date" class="fortextbox" name="date" 
+          placeholder="Date" formControlName="date">
+       <br/>
+       <input type="location" class="fortextbox" name="location" 
+       placeholder="Location" formControlName="location">
+    <br/>
+       
+       <input type="submit" class="forsubmit" value="Submit">
+    </form>
+ </div>

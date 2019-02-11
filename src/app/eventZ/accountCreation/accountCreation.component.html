@@ -1,0 +1,31 @@
+Create Your EventZ Account
+
+<form [formGroup]="seekerForm" (ngSubmit) ="onFormSubmit()">
+    <div class="form-group">
+    <label>Enter Your First Name><br>
+    <input type="text" class= "form-control" formControlName="firstName" placeholder="">
+    </div>
+    <div class="form-group">
+    <label>Enter Your Last Name </label><br>
+    <input type="text" class= "form-control" formControlName="lastName" placeholder="">
+    </div>
+    <div class="form-group">
+    <label>Enter Your Phone Number</label><br>
+    <input type="text" class= "form-control" formControlName="lastName" placeholder="0712XXXXXX">
+    </div>
+    <div class="form-group">
+    <label>Enter Your Email</label><br>
+    <input type="text" class= "form-control" formControlName="lastName" placeholder="abc@net.com">
+    </div>
+    <div class="form-group">
+    <label>Enter Your Password</label><br>
+    <input type="text" class= "form-control" formControlName="lastName" placeholder="********">
+    </div>
+    <div class="form-group">
+    <label>Confirm Your Password</label><br>
+    <input type="text" class= "form-control" formControlName="lastName" placeholder="">
+    </div>
+
+    <input type="submit" value="CREATE ACCOUNT" id="submit">
+
+</form>
