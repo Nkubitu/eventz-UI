@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { EventPlanningComponent } from '../app/eventManagent/eventPlanning/eventPlanning.component'
+import { EventPlanningComponent } from '../app/eventZ/eventPlanning/eventPlanning.component'
+import { ServiceListingComponent } from '../app/eventZ/serviceListing/serviceListing.component'
 
 @Component({
   selector: 'app-root',
-  templateUrl: '../app/eventManagent/eventPlanning/eventPlanning.component.html',
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {

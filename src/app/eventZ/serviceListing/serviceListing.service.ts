@@ -4,7 +4,7 @@ import { NGXLoggerMonitor, NGXLogInterface } from 'ngx-logger';
 
 
 @Injectable()
-export class EventPlanningService {
+export class ServiceListingService {
 
     constructor(private http: HttpClient, private seekerForm: Event) {
     };

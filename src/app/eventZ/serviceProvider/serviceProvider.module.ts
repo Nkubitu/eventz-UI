@@ -2,19 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { ServiceListingComponent } from './serviceListing.component';
-import { EventPlanningService } from './serviceListing.service';
+import { ServiceProviderComponent } from './serviceProvider.component';
+import { ServiceProviderService } from './serviceProvider.service';
 
 @NgModule({
   declarations: [
-    ServiceListingComponent
+    ServiceProviderComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [EventPlanningService],
-  bootstrap: [ServiceListingComponent]
+  providers: [ServiceProviderService],
+  bootstrap: [ServiceProviderComponent]
 })
-export class EventPlanningModule { }
+export class ServiceProviderModule { }

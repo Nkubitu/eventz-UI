@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ServiceListingComponent } from './serviceListing.component';
-import { EventPlanningService } from './serviceListing.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,7 @@ import { EventPlanningService } from './serviceListing.service';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [EventPlanningService],
+
   bootstrap: [ServiceListingComponent]
 })
-export class EventPlanningModule { }
+export class ServiceProviderModule { }

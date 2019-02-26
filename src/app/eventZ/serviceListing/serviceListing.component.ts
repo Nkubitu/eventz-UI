@@ -4,14 +4,14 @@ import { componentFactoryName } from '@angular/compiler';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { EventPlanningService } from './serviceListing.service'
+
 
 
 @Component({
 
 selector: 'eventPlanning-eventz',
-templateUrl: './eventPlanning.component.html',
-styleUrls: ['./eventPlanning.component.scss']
+templateUrl: './serviceListing.component.html',
+styleUrls: ['./serviceListing.component.scss']
 
 })
 
@@ -22,7 +22,7 @@ export class ServiceListingComponent implements OnInit{
      
     constructor(private formBuilder: FormBuilder, 
         private seeker: Event, 
-        private seekerService:EventPlanningService)
+       )
         {}
        
     ngOnInit(){
@@ -40,7 +40,7 @@ export class ServiceListingComponent implements OnInit{
 
     onFormSubmit(){
         if(this.seekerForm.valid){
-            this.seekerService.SubmitEventform()   
+               
         }
 
     }

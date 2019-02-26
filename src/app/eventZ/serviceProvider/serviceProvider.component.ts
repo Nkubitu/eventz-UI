@@ -10,8 +10,8 @@ import { ServiceProviderService } from './serviceProvider.service'
 @Component({
 
 selector: 'eventPlanning-eventz',
-templateUrl: './eventPlanning.component.html',
-styleUrls: ['./eventPlanning.component.scss']
+templateUrl: './serviceProvider.component.html',
+styleUrls: ['./serviceProvider.component.scss']
 
 })
 
