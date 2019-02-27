@@ -1,21 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {AppComponent } from './app.component';
-import { EventPlanningComponent } from '../app/eventZ/eventPlanning/eventPlanning.component'
-import { ServiceListingComponent } from '../app/eventZ/serviceListing/serviceListing.component'
+import { EventPlanningModule }  from './eventZ/eventPlanning/eventPlanning.module';
+import { ServiceListingModule }  from './eventZ/serviceListing/serviceListing.module';
+import { ServiceProviderModule } from './eventZ/serviceProvider/serviceProvider.module';
+import { LoginModule } from './eventZ/login/login.module';
+import { AccountCreationModule } from './eventZ/accountCreation/accountCreation.module';
+import { RouterModule } from '@angular/router';
+import { RouterModuleConfig } from './eventZ/config/routerModuleConfig';
+
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    EventPlanningComponent,
-    ServiceListingComponent
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ServiceListingModule,
+    EventPlanningModule,
+    ServiceProviderModule,
+    LoginModule,
+    AccountCreationModule,
+    RouterModule.forRoot(RouterModuleConfig.routes, {useHash: true}),
   ],
   providers: [],
   bootstrap: [AppComponent]

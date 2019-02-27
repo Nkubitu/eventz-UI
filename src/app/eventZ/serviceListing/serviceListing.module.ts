@@ -16,4 +16,4 @@ import { ServiceListingComponent } from './serviceListing.component';
 
   bootstrap: [ServiceListingComponent]
 })
-export class ServiceProviderModule { }
+export class ServiceListingModule { }
