@@ -24,7 +24,7 @@ import { AppComponent } from './app.component';
     ServiceProviderModule,
     LoginModule,
     AccountCreationModule,
-    RouterModule.forRoot(RouterModuleConfig.routes, {useHash: true}),
+    RouterModule.forRoot(RouterModuleConfig.routes, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]
