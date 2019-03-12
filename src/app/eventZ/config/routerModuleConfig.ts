@@ -13,7 +13,8 @@ export class RouterModuleConfig {
         { path: 'serviceProvider', component: ServiceProviderComponent },
         { path: 'serviceListing', component: ServiceListingComponent },
         { path: 'eventPlanning', component: EventPlanningComponent },
-        { path: '', component: AppComponent },
+        { path: '', component: AccountCreationComponent },
         { path: '**', component: AppComponent}
+        
     ];
 }

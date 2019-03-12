@@ -4,7 +4,7 @@ import { ServiceListingComponent } from '../app/eventZ/serviceListing/serviceLis
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: '../app/eventZ/shared/homePage.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
