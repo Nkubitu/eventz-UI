@@ -117,12 +117,14 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #ffffff;
+  background-color: #000000;
 }
+
 
 .active {
   background-color: #4CAF50;
 }
+
 
 ul {
   position: -webkit-sticky; /* Safari */

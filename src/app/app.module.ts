@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EventPlanningModule }  from './eventZ/eventPlanning/eventPlanning.module';
 import { ServiceListingModule }  from './eventZ/serviceListing/serviceListing.module';
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent
   ],
+
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -24,9 +26,11 @@ import { AppComponent } from './app.component';
     ServiceProviderModule,
     LoginModule,
     AccountCreationModule,
-    RouterModule.forRoot(RouterModuleConfig.routes, {}),
+    RouterModule.forRoot(RouterModuleConfig.routes, {enableTracing: true}),
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

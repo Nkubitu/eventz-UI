@@ -1,10 +1,11 @@
 <div class="scrollmenu">
   <ul>
-    <li><a href="default.asp">Home</a></li>
-    <li><a href="news.asp">About Us</a></li>
-    <li><a routerLink="/">Services</a>    
+    <li><a routerLink="/**">Home</a></li>
+    <li><a routerLink="/serviceListing">Services</a>  
+    <li> <a routerLink="/serviceProvider" routerLinkActive="active">Service Provider</a> </li>  
     <li><a href="about.asp">Help/FAQ</a></li>
-    <li><a href="about.asp">Contact Us</a></li>
+    
+    
   </ul>
 </div>
   <h1>Event Planning Made Easy!</h1>
@@ -23,22 +24,12 @@
         provide,
         will see your service! So make sure you can deliver!</p>
 
-      What do you want to do?
-
-
-
-
       <p> What brings you to EventZ?</p>
-      <select>
+      <select onchange= "TakeUserToAppropriatePage()">
         <option value="Checking it out" selected>Checking it out</option>
         <option value="planningEvent">I am planning an event </option>
         <option value="provideService">I am a service Provider</option>
       </select>
+      
       <br>
-
-      <nav>
-          <a routerLink="/accountCreation" routerLinkActive="active">Create an Account</a>
-          <a routerLink="/login" routerLinkActive="active">Login</a>
-          <a routerLink="/serviceProvider" routerLinkActive="active">Service Provider</a>   
-        </nav>
      
